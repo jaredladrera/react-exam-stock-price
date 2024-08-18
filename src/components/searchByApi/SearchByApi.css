@@ -1,0 +1,46 @@
+.search {
+    /* border: 2px solid red; */
+    margin-top: 10rem;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.search-input {
+    width: 50%;
+    margin: auto;
+    border: 2px solid gray;
+}
+
+.search label {
+    margin: auto;
+    justify-content: center;
+    font-family: "New Amsterdam", sans-serif;
+    /* border: 2px solid green; */
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.suggestions {
+    border: 1px solid #ddd;
+    max-height: 150px;
+    overflow-y: auto;
+    position: absolute;
+    width: 42%;
+    z-index: 1000;
+    background: #fff;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.suggestion-item {
+    padding: 8px;
+    cursor: pointer;
+  }
+  
+  .suggestion-item:hover {
+    background-color: #f0f0f0;
+  }
+  

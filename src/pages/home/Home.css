@@ -1,0 +1,19 @@
+.card {
+    min-width: 100vh;
+	height: 100%;
+}
+
+/* Home.css */
+
+.nav-link {
+    border: 2px solid transparent;
+    padding: 5px 10px;
+    color: white; /* Set text color to white */
+    text-decoration: none; /* Remove underline from links */
+    transition: border-color 0.3s ease;
+  }
+  
+  .nav-link:hover {
+    border-color: #ffffff; /* Border color on hover */
+  }
+  
