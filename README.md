@@ -14,57 +14,44 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
-### `npm test`
+Stock Price Search Application
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+This repository contains a ReactJS application styled with Bootstrap that allows users to search for the latest stock prices. The app integrates with a third-party API to fetch stock data, but please note that the API has a limited number of requests available. If the data is not fetched, it might be because the API has exhausted its request credits.
 
-### `npm run build`
+Features
+Stock Search: Users can search for the latest stock prices by entering a stock symbol.
+Debounce Implementation: To optimize API usage, a debounce function is implemented to limit the number of API calls made as the user types in the search field.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Technologies Used
+ReactJS: The app is built using ReactJS, a popular JavaScript library for building user interfaces.
+Bootstrap 5: The user interface is styled with Bootstrap 5 for a modern and responsive design.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Getting Started
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Prerequisites
+Node.js and npm installed on your local machine.
 
-### `npm run eject`
+Installation
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Clone the repository: git clone https://github.com/jaredladrera/react-exam-stock-price.git
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Install the dependencies: npm install
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+If you have encounterring some babel issue try to install this package
+npm install --save-dev @babel/plugin-proposal-private-property-in-object
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Start the development server: npm start
 
-## Learn More
+Usage
+Enter a stock symbol in the search bar to fetch the latest stock price.
+Due to API limitations, the app may not fetch data if the request quota has been exceeded. Please register for new account for new api key or consider using a different API key.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+This is the link for api key
+https://rapidapi.com/realiz-so-realiz-so-default/api/real-time-stock-finance-quote/playground/apiendpoint_ae324ecb-7e32-4224-9ca7-cb393589902f
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+register an email and subscribe for free
+get the x-rapidapi-key and put on the .env file on the project
 
-### Code Splitting
+REACT_APP_RAPID_API_KEY= value of x-rapidapi-key
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
